@@ -1,0 +1,82 @@
+#manage .block {
+    position: relative;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 60px;
+    width: 100%;
+}
+#manage .block .blockTitle {
+    position: relative;
+    float: left;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+    font: 400 18px/1 "Poppins";
+    letter-spacing: 0.4px;
+    text-align: center;
+    color: #014166;
+    border-bottom: 1px solid #e5e5e5;
+}
+#manage .block .item {
+    position: relative;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding: 20px;
+    height: 230px;
+    width: calc(20% - 10px);
+    border: 1px solid #e5e5e5;
+    box-shadow: 0.6px 0 30px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+#manage .block .item img {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 60px;
+    object-fit: scale-down;
+    object-position: 50% 50%
+}
+#manage .block .item .title {
+    position: relative;
+    float: left;
+    margin: 20px 0;
+    width: 100%;
+    font: 700 14px/1 "Poppins";
+    text-align: center;
+    color: #37609a;
+}
+#manage .block .item .desc {
+    position: relative;
+    float: left;
+    width: 100%;
+    font: 500 10px/1.6 "Poppins";
+    letter-spacing: 0.4px;
+    text-align: center;
+    color: #2d5082;
+}
+
+/* Responsive -------------------------------- */
+
+@media screen and (max-width: 1200px){
+    #manage .block .item {
+        width: calc(33.3% - 10px)
+    }
+}
+@media screen and (max-width: 700px){
+    #manage .block .item {
+        margin-bottom: 20px;
+        width: calc(50% - 10px)
+    }
+}
+@media screen and (max-width: 460px){
+    #manage .block .item {
+        margin-bottom: 10px;
+        width: 100%
+    }
+}

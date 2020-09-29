@@ -1,0 +1,86 @@
+#vsat .block {
+    position: relative;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 60px;
+    width: 100%;
+}
+#vsat .block .blockTitle {
+    position: relative;
+    float: left;
+    margin-bottom: 6px;
+    width: 100%;
+    font: 700 18px/1.4 "Poppins";
+    letter-spacing: 0.4px;
+    text-align: center;
+    color: #014166;
+}
+#vsat .block .blockDesc {
+    position: relative;
+    float: left;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+    font: 400 12px/1.6 "Poppins";
+    letter-spacing: 0.4px;
+    text-align: center;
+    color: #014166;
+    border-bottom: 1px solid #e5e5e5;
+}
+#vsat .block .item {
+    position: relative;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding: 20px;
+    width: calc(50% - 20px);
+    min-height: 500px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0.6px 0 30px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+#vsat .block .item img {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 220px;
+    object-fit: scale-down;
+    object-position: 50% 50%
+}
+#vsat .block .item .title {
+    position: relative;
+    float: left;
+    margin: 30px 0 0 0;
+    width: 100%;
+    font: 700 14px/1 "Poppins";
+    text-align: center;
+    color: #37609a;
+}
+#vsat .block .item .desc {
+    position: relative;
+    float: left;
+    width: 100%
+}
+#vsat .block .item .desc p {
+    position: relative;
+    float: left;
+    margin-top: 20px;
+    width: 100%;
+    font: 500 10px/1.6 "Poppins";
+    letter-spacing: 0.4px;
+    text-align: left;
+    color: #2d5082;
+}
+
+/* Responsive -------------------------------- */
+
+@media screen and (max-width: 780px){
+    #vsat .block .item {
+        width: 100%
+    }
+}

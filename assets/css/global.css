@@ -1,0 +1,594 @@
+/* Header ------------------------------------ */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    background: #fff;
+    box-shadow: 0 3px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000
+}
+header .logo img {
+    position: relative;
+    float: left;
+    height: 30px;
+    object-fit: scale-down;
+    object-position: 50% 50%;
+}
+header .right {
+    position: relative;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+/* Menu -------------------------------------- */
+
+header .content .right .menu,
+header .content .right .menu > li {
+    position: relative;
+    float: left;
+    border: 1px solid #fff;
+    list-style: none
+}
+header .content .right .menu > li a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 32px;
+    font: 500 12px "Poppins";
+    letter-spacing: 0.6px
+}
+header .content .right .menu .mActive {
+    color: #fff;
+    background: #026199;
+    border-radius: 3px;
+    border-right: 10px solid #0080cc
+}
+header .content .right .menu .mActive img {
+    filter: brightness(0) invert(1)
+}
+header .content .right .menu > li a img {
+    position: relative;
+    float: left;
+    margin-left: 12px;
+    height: 5px;
+    object-fit: scale-down;
+    object-position: 50% 50%
+}
+header .content .right .menu > li:hover {
+    background: #fff;
+    border: 1px solid #ededed;
+    border-radius: 3px
+}
+
+/* Submenu ----------------------------------- */
+
+header .content .right .menu li ul,
+header .content .right .menu li ul li ul {
+    display: none;
+}
+header .content .right .menu li ul li {
+    border-bottom: 1px solid #f2f2f2;
+}
+header .content .right .menu > li:hover > ul,
+header .content .right .menu li ul li:hover ul {
+    position: absolute;
+    top: 32px;
+    left: 0px;
+    display: block;
+    padding: 5px 0 16px 0;
+    width: 220px;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 0.6px 10px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    z-index: 2000;
+}
+header .content .right .menu li ul li a img {
+    transform: rotate(-90deg)
+}
+header .content .right .menu li ul li .mActive {
+    border-radius: 0
+}
+header .content .right .menu li ul li:hover {
+    color: #fff;
+    background: #026199
+}
+header .content .right .menu li ul li:hover ul {
+    color: #4d4d4d;
+    left: 160px
+}
+
+/* Language ---------------------------------- */
+
+header .right .lang {
+    position: relative;
+    float: left;
+    margin-left: 40px
+}
+header .right .lang a {
+    position: relative;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 32px;
+    font: 600 12px/1 "Poppins";
+    color: #026199;
+    background: #fff;
+    border: 2px solid #026199
+}
+header .right .lang a:first-child{
+    border-radius: 3px 0 0 3px
+}
+header .right .lang a:last-child{
+    border-radius: 0 3px 3px 0
+}
+header .right .lang .active {
+    background: #026199;
+    color: #fff
+}
+header .right .resMenu {
+    display: none;
+    position: relative;
+    float: right;
+    width: 20px;
+    height: 20px;
+    object-fit: scale-down;
+    object-position: 50% 50%;
+    cursor: pointer;
+    z-index: 200;
+}
+
+/* Responsive Menu --------------------------- */
+
+header .resMenuBlock {
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    right: -240px;
+    padding: 20px;
+    width: 240px;
+    height: 100%;
+    background: #fff;
+    box-shadow: 0 1px 30px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease-in-out;
+    z-index: 9999;
+}
+.resOpen {
+    right: 0 !important;
+    opacity: 1 !important;
+}
+header .resContent {
+    position: relative;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%
+}
+header .resContent .top {
+    position: relative;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%
+}
+header .resContent .top .resLang {
+    position: relative;
+    float: left;
+}
+header .resContent .top .resLang img {
+    position: relative;
+    float: left;
+    padding: 6px;
+    width: 32px;
+    height: 32px;
+    background: #036299;
+    border-radius: 3px 0 0 3px;
+}
+header .resContent .top .resLang a {
+    position: relative;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px;
+    height: 32px;
+    font: 500 10px/1 "Poppins";
+    letter-spacing: 0.8px;
+    color: #fff;
+    background: #02476f;
+    border-radius: 0 3px 3px 0;
+}
+header .resContent .top .resClose {
+    position: relative;
+    float: left;
+    height: 14px;
+    object-fit: scale-down;
+    object-position: 50% 50%;
+    border-radius: 3px;
+    cursor: pointer;
+}
+header .resContent .list {
+    position: relative;
+    float: left;
+    width: 100%;
+    list-style: none
+}
+header .resContent .list li {
+    position: relative;
+    float: left;
+    width: 100%;
+    list-style: none
+}
+header .resContent .list a {
+    position: relative;
+    float: left;
+    padding: 12px 0;
+    width: 100%;
+    font: 500 12px "Poppins";
+    letter-spacing: 0.8px;
+    color: #002e48;
+    border-bottom: 1px solid #f2f2f2;
+}
+header .resContent .list li .child {
+    display: none;
+    position: relative;
+    float: left;
+    padding-left: 16px;
+    width: 100%;
+    transition: all 0.4s ease-in-out;
+    border-left: 1px solid #f2f2f2;
+    border-radius: 0 0 0 20px;
+}
+header .resContent .list .mActive {
+    padding: 12px;
+    background: #c5eee6;
+    border-radius: 3px;
+    border: none;
+}
+header .resContent .list .pActive {
+    border-radius: 3px;
+    padding: 12px;
+    background: #02476f;
+    color: #fff;
+}
+header .resContent .list a img {
+    position: absolute;
+    top: 50%;
+    margin-top: -6px;
+    right: 10px;
+    height: 12px;
+    object-fit: scale-down;
+    object-position: 50% 50%;
+}
+header .resContent .copy {
+    position: relative;
+    float: left;
+    width: 100%;
+    font: 300 10px/1.8 "Poppins";
+    letter-spacing: 0.6px;
+    color: #999;
+}
+
+/* Footer ------------------------------------ */
+
+footer {
+    position: relative;
+    float: left;
+    width: 100%
+}
+footer .part1 {
+    position: relative;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0;
+    border-top: 1px solid #ededed;
+    width: 100%;
+}
+footer .part1 .left {
+    position: relative;
+    float: left;
+    width: 340px
+}
+footer .part1 .left .logo img {
+    position: relative;
+    float: left;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 20px;
+    object-fit: scale-down;
+    object-position: 0% 50%
+}
+footer .part1 .left .nameCompany {
+    position: relative;
+    float: left;
+    margin-bottom: 12px;
+    width: 100%;
+    font: 600 14px/1 "Poppins";
+    letter-spacing: 0.2px;
+    color: #999
+}
+footer .part1 .left .desc {
+    position: relative;
+    float: left;
+    width: 100%;
+    font: 400 10px/1.6 "Poppins";
+    letter-spacing: 0.6px
+}
+footer .menu {
+    position: relative;
+    float: left
+}
+footer .menu .block {
+    position: relative;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-right: 20px;
+    width: 160px
+}
+footer .menu .block span {
+    position: relative;
+    float: left;
+    margin: 0 0 30px 5px;
+    width: 100%;
+    font: 700 14px/1 "Poppins";
+    color: #014166
+}
+footer .menu .block ul {
+    position: relative;
+    float: left;
+    width: 100%;
+    list-style: none
+}
+footer .menu .block .two {
+    width: 50% !important
+}
+footer .menu .block ul li {
+    position: relative;
+    float: left;
+    padding: 5px;
+    width: 100%;
+    font: 500 10px/1 "Poppins";
+    letter-spacing: 0.4px;
+    border-right: 6px solid #fff;
+    transition: all 0.2s ease-in-out
+}
+footer .menu .block ul li:hover,
+footer .menu .block ul .mActive {
+    padding: 8px;
+    color: #fff;
+    background: #00446d;
+    border-color: #026199
+}
+footer .part1 .right {
+    position: relative;
+    float: left;
+    width: 300px
+}
+footer .part1 .right .lang {
+    position: relative;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+    width: 100%
+}
+footer .part1 .right .lang a {
+    position: relative;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 30px;
+    font: 600 10px/1 "Poppins";
+    letter-spacing: 0.4px;
+    color: #026199;
+    background: #fff;
+    border: 2px solid #026199
+}
+footer .part1 .right .lang a:first-child{
+    border-radius: 3px 0 0 3px
+}
+footer .part1 .right .lang a:last-child{
+    border-radius: 0 3px 3px 0
+}
+footer .part1 .right .lang .active {
+    background: #026199;
+    color: #fff
+}
+footer .location,
+footer .contact {
+    position: relative;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 15px;
+    width: 100%
+}
+footer .location img,
+footer .contact img {
+    position: relative;
+    float: left;
+    margin-right: 20px;
+    width: 16px;
+    height: 16px;
+    object-fit: scale-down;
+    object-position: 50% 50%
+}
+footer .location span {
+    position: relative;
+    float: left;
+    font: 400 10px/1.6 "Poppins";
+    letter-spacing: 0.4px;
+    color: #014166
+}
+footer .contact a {
+    position: relative;
+    float: left;
+    width: 100%;
+    font: 600 12px/1 "Poppins";
+    letter-spacing: 0.2px;
+    color: #126ea3
+}
+footer .part2 {
+    position: relative;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    width: 100%;
+    background: #f7f7f7;
+    border-top: 1px solid #ededed
+}
+footer .part2 .copy {
+    position: relative;
+    float: left;
+    font: 400 10px/1.6 "Poppins";
+    letter-spacing: 0.6px;
+    color: #999;
+}
+footer .part2 .right {
+    position: relative;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+footer .part2 .right .socials,
+footer .part2 .right .socials a {
+    position: relative;
+    float: left
+}
+footer .part2 .right .socials img {
+    opacity: 0.4;
+    position: relative;
+    float: left;
+    margin-left: 16px;
+    height: 20px;
+    object-fit: scale-down;
+    object-position: 50% 50%
+}
+footer .part2 .right .goUp {
+    position: relative;
+    float: left;
+    margin-left: 40px;
+    padding: 8px;
+    width: 30px;
+    height: 26px;
+    object-fit: scale-down;
+    object-position: 50% 50%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer
+}
+footer .part2 .right .goUp:hover {
+    border-color: transparent;
+    box-shadow: 0.6px 0 16px rgba(0, 0, 0, 0.2)
+}
+
+/* Responsive -------------------------------- */
+
+@media screen and (max-width: 1240px){
+    footer .part1 .right {
+        display: none
+    }
+}
+@media screen and (max-width: 1000px){
+    header .logo img {
+        height: 24px;
+    }
+    header .right .menu,
+    header .right .lang {
+        display: none
+    }
+    header .right .resMenu {
+        display: block
+    }
+}
+@media screen and (max-width: 920px){
+    footer .part1 {
+        padding: 30px 0
+    }
+    footer .part1 .content {
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: flex-start
+    }
+    footer .part1 .left {
+        margin-bottom: 60px;
+        width: 100%
+    }
+    footer .part1 .left .desc {
+        width: 400px
+    }
+    footer .part1 .menu {
+        width: 100%
+    }
+}
+@media screen and (max-width: 600px){
+    footer .part1 {
+        padding: 60px 0
+    }
+    footer .part1 .left {
+        margin-bottom: 0
+    }
+    footer .part1 .left .desc {
+        width: 100%
+    }
+    footer .part1 .menu {
+        display: none
+    }
+}
+@media screen and (max-width: 480px){
+    footer .part2 .content {
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: flex-start
+    }
+    footer .part2 .copy {
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    footer .part2 .right {
+        width: 100%;
+    }
+    footer .part2 .right .socials a img {
+        margin-left: 0;
+        margin-right: 15px;
+    }
+}
+@media screen and (max-width: 380px){
+    footer .part2 .copy {
+        display: none;
+    }
+}
+@media screen and (max-width: 300px){
+    footer .part1 {
+        display: none
+    }
+}

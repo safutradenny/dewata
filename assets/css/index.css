@@ -1,0 +1,298 @@
+#index {
+    position: relative;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    padding: 100px 0 80px 0;
+    width: 100%;
+}
+#index .top {
+    position: relative;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 320px;
+}
+#index .top h1 {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+    font: 800 42px/1 "Poppins";
+    text-align: center;
+    color: #014166
+}
+#index .top .desc {
+    position: relative;
+    float: left;
+    width: 360px;
+    font: 500 12px/1.6 "Poppins";
+    text-align: center;
+    letter-spacing: 0.4px;
+    color: #999;
+}
+#index .opening {
+    position: relative;
+    float: left;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 300px;
+    width: 100%;
+    background: #dbf0fc
+}
+#index .opening .content > img {
+    position: relative;
+    float: left;
+    margin-top: -300px;
+    width: 100%;
+    height: 600px;
+    object-fit: scale-down;
+    object-position: 50% 50%
+}
+#index .opening .about {
+    position: relative;
+    float: left;
+    margin: 20px 0;
+    width: 742px;
+}
+#index .opening .about .author {
+    position: relative;
+    float: left;
+    margin-bottom: 6px;
+    width: 100%;
+    font: 600 12px/1 "Poppins";
+    letter-spacing: 0.2px;
+    color: #9fbac9;
+}
+#index .opening .about h1 {
+    position: relative;
+    float: left;
+    margin-top: 6px;
+    width: 100%;
+    font: 800 24px/1 "Poppins";
+    color: #245377;
+}
+#index .opening .about .desc {
+    position: relative;
+    float: left;
+    margin-top: 20px;
+    width: 100%;
+    font: 400 12px/1.6 "Poppins";
+    letter-spacing: 0.4px;
+}
+#index .opening .about a {
+    position: relative;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 0 10px;
+    height: 30px;
+    font: 500 10px/1 "Poppins";
+    letter-spacing: 0.6px;
+    color: #fff;
+    background: #98b5c5;
+    border-radius: 3px;
+}
+#index .opening .block {
+    position: relative;
+    float: left;
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-between;
+    padding: 60px 0;
+    width: 920px;
+}
+#index .opening .block .item {
+    position: relative;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    width: calc(33.3% - 30px);
+}
+#index .opening .block .item img {
+    position: relative;
+    float: left;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 60px;
+    object-fit: scale-down;
+    object-position: 50% 50%
+}
+#index .opening .block .item h3 {
+    position: relative;
+    float: left;
+    margin-bottom: 16px;
+    width: 100%;
+    font: 700 14px/1 "Poppins";
+    text-align: center;
+    color: #245377;
+}
+#index .opening .block .item span {
+    position: relative;
+    float: left;
+    margin-bottom: 16px;
+    width: 100%;
+    font: 400 12px/1.6 "Poppins";
+    letter-spacing: 0.4px;
+    text-align: center;
+}
+#index .services {
+    position: relative;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0 0 0;
+    width: 100%;
+}
+#index .services .trademark {
+    position: relative;
+    float: left;
+    margin-bottom: 12px;
+    width: 100%;
+    font: 600 14px/1 "Poppins";
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #999
+}
+#index .services .title {
+    position: relative;
+    float: left;
+    margin-bottom: 40px;
+    width: 100%;
+    font: 800 22px/1 "Poppins";
+    text-transform: uppercase;
+    text-align: center;
+}
+#index .services .block {
+    position: relative;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-between;
+    width: 100%
+}
+#index .services .item {
+    position: relative;
+    float: left;
+    margin-bottom: 14px;
+    padding: 30px;
+    width: calc(33.3% - 10px);
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer
+}
+#index .services .item:hover {
+    box-shadow: 0.6px 10px 40px rgba(0, 0, 0, 0.15);
+    border-color: transparent
+}
+#index .services .item img {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 360px;
+    object-fit: scale-down;
+    object-position: 50% 50%;
+}
+#index .services .item h1 {
+    position: relative;
+    float: left;
+    margin: 10px 0 20px 0;
+    width: 100%;
+    font: 700 18px/1 "Poppins";
+    letter-spacing: 0.4px;
+    text-align: center;
+    color: #014166;
+}
+#index .services .item span {
+    position: relative;
+    float: left;
+    margin-bottom: 10px;
+    width: 100%;
+    min-height: 90px;
+    font: 400 12px/1.6 "Poppins";
+    letter-spacing: 0.4px;
+    text-align: center;
+}
+#index .services .item .more {
+    position: relative;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding-top: 30px;
+    width: 100%;
+    font: 600 10px/1 "Poppins";
+    letter-spacing: 0.4px;
+    border-top: 1px solid #e5e5e5;
+    color: #014166;
+}
+#index .services .item .more img {
+    position: relative;
+    float: left;
+    width: auto;
+    height: 10px;
+    object-fit: scale-down;
+    object-position: 50% 50%
+}
+
+/* Responsive -------------------------------- */
+
+@media screen and (max-width: 1320px){
+    #index .top {
+        padding: 0 20px;
+    }
+}
+@media screen and (max-width: 960px){
+    #index .opening .block {
+        width: 100%
+    }
+}
+@media screen and (max-width: 720px){
+    #index .top h1 {
+        font: 800 32px/1.2 "Poppins"
+    }
+    #index .opening .content > img {
+        height: auto
+    }
+    #index .opening .about {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: center;
+        margin: 40px 0;
+        text-align: center;
+    }
+    #index .opening .about .desc {
+        font: 500 10px/1.6 "Poppins"
+    }
+    #index .opening .block {
+        display: none;
+    }
+    #index .services .item {
+        width: 100% !important
+    }
+    #index .services .item img {
+        height: 300px
+    }
+}
+@media screen and (max-width: 1180px){
+    #index .services .item {
+        margin-bottom: 20px;
+        width: calc(50% - 10px)
+    }
+}

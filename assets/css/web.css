@@ -1,0 +1,182 @@
+#web .top .back {
+    object-position: 50% 63% !important
+}
+#web .bottom {
+    padding: 0 0 30px 0
+}
+#web .switch {
+    position: relative;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    box-sizing: border-box;
+    list-style: none;
+    z-index: 300;
+}
+#web .switch li {
+    position: relative;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0px;
+    padding: 0 10px;
+    width: 33.3%;
+    height: 62px;
+    font: 600 14px/1.4 "Poppins";
+    letter-spacing: 0.6px;
+    text-align: center;
+    color: #ffffffe6;
+    background: #014166;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+#web .switch li:first-child {
+    border-radius: 0 0 0 5px
+}
+#web .switch li:nth-child(2){
+    border: 1px solid #000e15;
+    border-width: 0 1px
+}
+#web .switch li:last-child {
+    border-radius: 0 0 5px 0
+}
+#web .switch .clicked {
+    background: #46bef5
+}
+#web .tab {
+    display: none;
+    position: absolute
+}
+#web .opened {
+    display: block;
+    position: relative;
+    float: left;
+    padding: 60px 0 0 0;
+    width: 100%;
+    font: 400 12px/1.6 "Poppins";
+    letter-spacing: 0.3px;
+    box-sizing: border-box
+}
+#web .prime > img {
+    width: 400px;
+    height: auto
+}
+#web .prime > div {
+    width: calc(100% - 440px)
+}
+#web .prime div span {
+    font: 700 22px/1.4 "Poppins"
+}
+#web .block {
+    position: relative;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 60px;
+    width: 100% !important
+}
+#web .block .blockTitle {
+    position: relative;
+    float: left;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+    font: 400 18px/1 "Poppins";
+    letter-spacing: 0.4px;
+    text-align: center;
+    color: #014166;
+    border-bottom: 1px solid #e5e5e5
+}
+#web .block .item {
+    position: relative;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding: 20px;
+    min-height: 260px;
+    width: calc(33.3% - 10px);
+    border: 1px solid #e5e5e5;
+    box-shadow: 0.6px 0 30px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+#web .block .item img {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 60px;
+    object-fit: scale-down;
+    object-position: 50% 50%
+}
+#web .block .item .title {
+    position: relative;
+    float: left;
+    margin: 20px 0;
+    width: 100%;
+    font: 700 14px/1 "Poppins";
+    text-align: center;
+    color: #37609a;
+}
+#web .block .item .desc {
+    position: relative;
+    float: left;
+    margin-bottom: 0;
+    width: 100%;
+    font: 500 10px/1.6 "Poppins";
+    letter-spacing: 0.4px;
+    text-align: center;
+    color: #2d5082;
+}
+
+/* Responsive -------------------------------- */
+
+@media screen and (max-width: 1200px){
+    #web .block .item {
+        margin-bottom: 20px;
+        width: calc(50% - 10px)
+    }
+}
+@media screen and (max-width: 980px){
+    #web .prime > img {
+        margin: 0 0 30px 0;
+        width: 100%;
+        height: 400px
+    }
+    #web .prime > div {
+        width: 100%
+    }
+}
+@media screen and (max-width: 580px){
+    #web .block .item {
+        width: 100%
+    }
+    #web .switch {
+        flex-wrap: wrap;
+        align-content: flex-start
+    }
+    #web .switch li {
+        width: 50%
+    }
+    #web .switch li:first-child {
+        border: 1px solid #000e15;
+        border-width: 0 0 1px 1px;
+        border-radius: 0
+    }
+    #web .switch li:nth-child(2){
+        border: 1px solid #000e15;
+        border-width: 0 1px 1px 1px;
+        border-radius: 0
+    }
+    #web .switch li:last-child {
+        width: 100%;
+        border: 1px solid #000e15;
+        border-width: 0 1px 1px 1px;
+        border-radius: 0 0 5px 5px
+    }
+}

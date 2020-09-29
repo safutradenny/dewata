@@ -1,0 +1,62 @@
+#server .block {
+    position: relative;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 60px;
+    width: 100%
+}
+#server .block .item {
+    position: relative;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding: 20px;
+    width: calc(20% - 10px);
+    height: 200px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0.6px 0 30px rgba(0, 0, 0, 0.1);
+    border-radius: 6px
+}
+#server .block .item img {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 60px;
+    object-fit: scale-down;
+    object-position: 50% 50%
+}
+#server .block .item span {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+    font: 500 10px/1.6 "Poppins";
+    letter-spacing: 0.4px;
+    text-align: center;
+    color: #2d5082
+}
+
+/* Responsive -------------------------------- */
+
+@media screen and (max-width: 1000px){
+    #server .block .item {
+        width: calc(33.3% - 10px)
+    }
+}
+@media screen and (max-width: 580px){
+    #server .block .item {
+        margin-bottom: 20px;
+        width: calc(50% - 10px)
+    }
+}
+@media screen and (max-width: 360px){
+    #server .block .item {
+        margin-bottom: 10px;
+        width: 100%
+    }
+}

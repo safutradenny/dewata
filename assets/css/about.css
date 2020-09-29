@@ -1,0 +1,108 @@
+#about .bottom {
+    position: relative;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+    width: 100%
+}
+#about .bottom .left {
+    position: relative;
+    float: left;
+    width: 50%
+}
+#about .bottom .left h1 {
+    position: relative;
+    float: left;
+    margin-bottom: 10px;
+    width: 100%;
+    font: 500 14px/1 "Poppins";
+    color: #b2b2b2
+}
+#about .bottom .left h3 {
+    position: relative;
+    float: left;
+    margin-bottom: 30px;
+    width: 100%;
+    font: 800 30px/1 "Poppins";
+    color: #014166
+}
+#about .bottom .left p {
+    position: relative;
+    float: left;
+    margin-bottom: 16px;
+    width: 100%;
+    font: 400 12px/1.6 "Poppins";
+    letter-spacing: 0.4px
+}
+#about .bottom .left .values {
+    position: relative;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%
+}
+#about .bottom .left .values h1 {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5e5e5;
+    font: 600 20px/1 "Poppins";
+    letter-spacing: 0.4px;
+    color: #2994d3
+}
+#about .bottom .left .values .item {
+    position: relative;
+    float: left;
+    width: calc(33.3% - 20px)
+}
+#about .bottom .left .values .item .title {
+    position: relative;
+    float: left;
+    margin-bottom: 15px;
+    width: 100%;
+    font: 600 14px/1 "Poppins"
+}
+#about .bottom .left .values .item .desc {
+    position: relative;
+    float: left;
+    width: 100%;
+    font: 400 10px/1.6 "Poppins";
+    letter-spacing: 0.4px
+}
+#about .bottom .right {
+    position: relative;
+    float: left;
+    width: calc(50% - 20px);
+    object-fit: scale-down;
+    object-position: 50% 50%
+}
+
+/* Responsive -------------------------------- */
+
+@media screen and (max-width: 1000px){
+    #about .bottom .content {
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: flex-start
+    }
+    #about .bottom .left {
+        width: 100%;
+        margin-bottom: 30px
+    }
+    #about .bottom .right {
+        width: 100%
+    }
+}
+@media screen and (max-width: 600px){
+    #about .bottom .left .values .item {
+        margin-bottom: 20px;
+        width: 100%
+    }
+    #about .bottom .left h3 {
+        font: 300 36px/1.4 "Poppins"
+    }
+}
